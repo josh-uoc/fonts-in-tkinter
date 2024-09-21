@@ -5,11 +5,9 @@ root.withdraw()
 fonts = [f.lower() for f in font.families()]
 
 while True:
-    text = input("Enter the font: ").lower()
+    text = input("Enter the font you're looking for: ").lower()
     if text in fonts:
-        print("yes")
+        print(f"{text} can be used with Tkinter.")
     else:
-        print("no")
-
-
+        print(f"{text} is not in the Tkinter fonts list.")
 
